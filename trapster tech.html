@@ -1,0 +1,162 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trapster Ultra Zone 🚀</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 600% 600%;
+      animation: gradientShift 20s ease infinite;
+      color: #00ffff;
+      text-align: center;
+      transition: 0.5s;
+    }
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    #loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    #loader-bar {
+      width: 50%;
+      height: 8px;
+      background: #00ffff;
+      animation: load 2s infinite;
+    }
+    @keyframes load {
+      0% {transform: scaleX(0);}
+      50% {transform: scaleX(1);}
+      100% {transform: scaleX(0);}
+    }
+    main {
+      padding: 20px;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+[4/26, 16:27] ChatGPT: from {opacity: 0; transform: scale(0.8);}
+      to {opacity: 1; transform: scale(1);}
+    }
+    .toggle-mode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00ffff;
+      color: #0f2027;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffff;
+      font-weight: bold;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background: #00ffff;
+      color: #0f2027;
+      box-shadow: 0 0 20px #00ffff;
+    }
+    .chat-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00ffff;
+      color: #0f2027;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 22px;
+      box-shadow: 0 0 10px #00ffff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="loader">
+  <div id="loader-bar"></div>
+</div>
+
+<button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button>
+
+<main>
+[4/26, 16:27] ChatGPT: const now = new Date();
+    document.getElementById('clock').innerText = now.toLocaleTimeString();
+  }
+  setInterval(updateClock, 1000);
+
+  function toggleMode() {
+    if (document.body.style.background.includes('white')) {
+      document.body.style.background = 'linear-gradient(270deg, #0f2027, #203a43, #2c5364)';
+      document.body.style.color = '#00ffff';
+    } else {
+      document.body.style.background = '#fff';
+      document.body.style.color = '#0f2027';
+    }
+  }
+</script>
+
+</body>
+</html>
+```
+
+Now it's all ready to copy and paste as needed! 😎🚀
+[4/26, 16:27] ChatGPT: <img src="https://i.postimg.cc/xd4s1cyZ/trapster-logo.png" alt="Trapster Logo" style="width:130px;border-radius:50%;box-shadow:0 0 20px #00ffff;">
+  <h1>🚀 Welcome to Trapster's Ultra Zone 🚀</h1>
+  <p id="quote">Loading new vibe...</p>
+
+  <div class="socials">
+    <a href="https://instagram.com/" target="_blank">Instagram</a>
+    <a href="https://t.me/" target="_blank">Telegram</a>
+    <a href="https://your-vpn-channel-link.com" target="_blank">Vibes VPN</a>
+    <a href="#secret">Hidden Area</a>
+  </div>
+
+  <div id="clock" style="margin-top:20px; font-size:18px;"></div>
+</main>
+
+<audio autoplay loop>
+  <source src="https://filesamples.com/samples/audio/mp3/sample3.mp3" type="audio/mp3">
+</audio>
+
+<div class="chat-button" onclick="alert('Trapster is Offline! 🚀')">💬</div>
+
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('loader').style.display = 'none';
+    }, 2500);
+  };
+  const quotes = [
+    "Move silent. Flex loud. 🚀",
+    "Privacy makes you unstoppable. 🔥",
+    "Trap cool, Trap smart. 😎",
+    "Elite minds stay private. 🧠",
+    "No noise, just results. 🏆",
+    "You feel it, not show it. 🎯"
+  ];
+  document.getElementById('quote').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+
+  function updateClock() {
